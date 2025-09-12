@@ -2,14 +2,15 @@ body {
     font-family: source sans pro, Arial, Helvetica, sans-serif;
     background-color: #FCF9F2;
     color: #26211D;
+    margin: 0%;
 }
 
 .padding {
-    padding: 10%;
+    padding: 8% 5%;
 }
 
 .innerpadding {
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .myLinksDesktop {
@@ -41,8 +42,8 @@ nav div {
 nav {
     display: flex;
     flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 5%;
     align-content: center;
 }
@@ -112,6 +113,7 @@ header {
     justify-items: center;
     overflow: hidden;
     margin-bottom: 10%;
+    aspect-ratio: 1/1;
 
 }
 
@@ -161,6 +163,7 @@ h2 {
 .aboutus {
     background-color: #E0D9D1;
     color: #26211D;
+    height: 100%;
 }
 
 .aboutustext {
@@ -170,12 +173,13 @@ h2 {
 .imageabout {
     background-image: url(../images/aboutus.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     border-radius: 10%;
     max-width: 100%;
+
 }
 
 
@@ -350,14 +354,16 @@ footer {
         justify-items: center;
         overflow: hidden;
         margin-bottom: 10%;
+        aspect-ratio: 1/1;
 
     }
 
     .imageabout {
-        height: 400px;
+     min-height: 600px;
         overflow: hidden;
         border-radius: 0;
         padding-left: 0%;
+        
     }
 
     .aboutus {
@@ -366,6 +372,7 @@ footer {
         padding-left: 0%;
         padding-right: 0%;
         padding-bottom: 0%;
+        height: auto;
     }
 
     .aboutustext {
@@ -476,9 +483,9 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 15%;
+        padding-right: 10%;
         width: auto;
-        padding-top: 5%;
+        padding-top: 10%;
         padding-bottom: 10%;
     }
 
