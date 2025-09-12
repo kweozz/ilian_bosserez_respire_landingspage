@@ -1,0 +1,544 @@
+body {
+    font-family: source sans pro, Arial, Helvetica, sans-serif;
+    background-color: #FCF9F2;
+    color: #26211D;
+}
+
+.padding {
+    padding: 10%;
+}
+
+.innerpadding {
+    padding-bottom: 5%;
+}
+
+.myLinksDesktop {
+    display: none;
+}
+.myLinksDesktop a{
+    display: none;
+}
+nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.burger {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.burger a {
+    color: #26211D;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    align-content: center;
+}
+
+#myLinks {
+    display: none;
+    margin-top: 0;
+    background-color: #E0D9D1;
+    border-radius: 1.2em;
+}
+
+#myLinks a {
+    text-decoration: none;
+    color: #26211D;
+    margin: 1em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+#myLinks a:hover {
+    color: #E78E1A;
+}
+
+.btn {
+    background-color: #E78E1A;
+    padding: 0.8em;
+    color: #FCF9F2;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 1.2em;
+}
+
+.btn:hover {
+    transform: scale(90%);
+    transition: all 0.2s ease-in-out;
+}
+.btn:active{
+    background-color:#E0D9D1;
+}
+.logo {
+    width: 100%;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #727C61;
+    font-size: 1.8em;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.headerslide {
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 250px;
+    display: grid;
+    border-radius: 10%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    overflow: hidden;
+    margin-bottom: 10%;
+
+}
+
+
+.headertext {
+    margin: 0%;
+}
+
+.headerslide img {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    animation: sliding 15s 1s ease-in-out infinite;
+}
+
+@keyframes sliding {
+
+    0% {
+        transform: translate(0, 0)
+    }
+
+    50% {
+        transform: translate(0, -40%)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+
+}
+
+.headercontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h2 {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #727C61;
+    font-size: 1.6em;
+    margin: 0%;
+}
+
+.aboutus {
+    background-color: #E0D9D1;
+    color: #26211D;
+}
+
+.aboutustext {
+    margin: 0%;
+}
+
+.imageabout {
+    background-image: url(../images/aboutus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10%;
+    max-width: 100%;
+}
+
+
+.discover {
+    background-color: #26211D;
+    color: #FCF9F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover img {
+    max-width: 100%;
+    width: 80%;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #727C61;
+
+
+}
+
+.discovertitle {
+    text-align: center;
+}
+
+.discoverinfo {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.discoverinfo div {
+    padding-right: 10%;
+}
+
+.discoverinfo div p {
+    font-weight: lighter;
+}
+
+.quote {
+    background-color: #E0D9D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.styleguide img {
+    width: 60%;
+    max-width: 100%;
+}
+
+.styleguide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.articles article p {
+    margin: 0%;
+}
+
+.articles article img {
+    width: 15%;
+}
+
+footer {
+    padding: 5% 5%;
+    color: #727C61;
+}
+
+.footerup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerbtn {
+    text-decoration: none;
+    border: #727C61;
+    color: #727C61;
+    font-weight: 500;
+    padding: 0.4em 0.7em;
+    border-style: solid;
+    border-radius: 1.2em;
+}
+
+.footerbtn:hover {
+    background-color: #727C61;
+    color: #FCF9F2;
+}
+
+.logo img {
+    width: 5em;
+}
+
+@media(min-width:750px) {
+    .burgermenu {
+        display: none;
+    }
+.logo {
+    display: flex;
+}
+    .myLinksDesktop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .myLinksDesktop a {
+        text-decoration: none;
+        color: #26211D;
+        margin: 1em;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+       
+      
+    }
+
+    .myLinksDesktop a:hover {
+        color: #E78E1A;
+    }
+
+    #myLinks {
+        display: none;
+    }
+    #myLinks a{
+        display: none;
+    }
+
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+  
+    .burger {
+        padding-bottom: 0%;
+    }
+
+    .headerslide {
+        width: 70%;
+        height: 350px;
+        display: grid;
+        border-radius: 10%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        overflow: hidden;
+        margin-bottom: 10%;
+
+    }
+
+    .imageabout {
+        height: 400px;
+        overflow: hidden;
+        border-radius: 0;
+        padding-left: 0%;
+    }
+
+    .aboutus {
+        background-color: #E0D9D1;
+        color: #26211D;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 0%;
+    }
+
+    .aboutustext {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .articles {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+}
+
+@media(min-width:950px) {
+    .headercontent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 7em;
+    }
+
+    .myLinksDesktop a {
+        font-size: 1.2em;
+    }
+
+    #myLinks a {
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .headerslide {
+        width: 100%;
+        height: 22em;
+    }
+
+    .headertext {
+        padding-right: 10%;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    @keyframes sliding {
+
+        0% {
+            transform: translate(0, 0)
+        }
+
+        50% {
+            transform: translate(0, -20%)
+        }
+
+        100% {
+            transform: translate(0, 0)
+        }
+
+    }
+
+    .imageabout {
+        height: 100%;
+
+        overflow: hidden;
+        border-radius: 0;
+        padding-left: 0%;
+        padding-top: 0%;
+        background-size: cover;
+
+
+    }
+
+    .aboutustext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 15%;
+        width: auto;
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .aboutus {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0%;
+    }
+
+    .discover img {
+        max-width: 100%;
+        width: 50%;
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-family: Montserrat;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #727C61;
+
+
+    }
+
+    .discoverinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+    }
+
+    .discoverinfo div p {
+        font-weight: lighter;
+    }
+
+}
+@media(min-width:1400px){
+    .headerslide {
+        width: 100%;
+        height: 32em;
+    }
+    @keyframes sliding {
+
+        0% {
+            transform: translate(0, 0)
+        }
+
+        50% {
+            transform: translate(0, -40%)
+        }
+
+        100% {
+            transform: translate(0, 0)
+        }
+
+    }
+}

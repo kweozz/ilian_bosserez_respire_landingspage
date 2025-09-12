@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/respire.css">
+    <title>Respire</title>
+</head>
+
+<body>
+    <nav>
+        <div class="burger">
+            <div>
+            <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+            <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="burgermenu fa fa-bars"></i></a>    
+        </div>
+     
+        <div id="myLinks">
+            <a href="#aboutuslink">About us</a>
+            <a href="#discoverlink">Discover</a>
+            <a href="#styleguidelink">Style Guide</a>
+            <a class="navbtn" href="#">Download</a>
+        </div>
+           <div class="myLinksDesktop">
+            <a href="#aboutuslink">About us</a>
+            <a href="#discoverlink">Discover</a>
+            <a href="#styleguidelink">Style Guide</a>
+            <a class="navbtn" href="#">Download</a>
+        </div>
+    </nav>
+    <header class="padding">
+        <div class="headercontent">
+            <div class="headertext innerpadding">
+                <h1>Resell find and inspire.</h1>
+                <p class="text">
+                    Shop sustainably, express yourself: Respire, the fashion app that connects you with pre-loved
+                    clothing and your unique style.
+                </p>
+            </div>
+            <div class="headerslide ">
+                <img src="./images/feed header.png" alt="feedimages">
+            </div>
+        </div>
+        <a class="btn" href="#">Download now</a>
+    </header>
+    <div id="aboutuslink" class="aboutus  padding">
+        <div class="aboutustext innerpadding ">
+            <h2>
+                About us
+            </h2>
+            <p>Ilian Bosserez, inspired by the creativity of Instagram closet pages and the treasure hunt of Vinted and
+                Pinterest, envisioned a platform that empowers self-expression through sustainable fashion. Respire was
+                born!
+               </p>
+               <p> We believe fashion should be fun, expressive, and kind to the planet. Respire is a community where you
+                can find inspiration, connect with like-minded individuals, and shop for pre-loved clothing that
+                reflects your unique style.</p>
+        </div>
+        <div class="imageabout innerpadding">
+           
+        </div>
+    </div>
+    <div id="discoverlink" class="discover padding">
+        <div class="discovertitle innerpadding">
+            <h2>Discover Respire</h2>
+            <h3>How our app works</h3>
+        </div>
+        <img class="innerpadding" src="images/discoverrespireiphone.png" alt="phonewithappscreens">
+        <div class="discoverinfo innerpadding">
+            <div class="innerpadding" >
+                <h4> Express yourself</h4>
+                <p>Create your virtual closet (your profile!) to showcase your unique style</p>
+            </div>
+            <div class="innerpadding" >
+                <h4> Clear your closet</h4>
+                <p>Give your pre-loved items a new life and declutter your closet.</p>
+            </div>
+            <div class="innerpadding" >
+                <h4> Connect with your tribe</h4>
+                <p>Follow users with similar styles, discover new fashion inspirations, and share your own tips.</p>
+            </div>
+            <div>
+                <h4> Find unique treasures</h4>
+                <p>Browse endless styles and discover one-of-a-kind vintage pieces.</p>
+            </div>
+        </div>
+    </div>
+    <div class="quote padding">
+        <h2>"Looking good shouldn't cost the Earth."</h2>
+    </div>
+    <div id="styleguidelink" class="styleguide padding ">
+        <h2>Style Guide & Pinterest</h2>
+        <p class="text innerpadding">
+            Level up your fashion with Respire's features: interactive style quiz, AI-powered feed, and Pinterest
+            integration.</p>
+            <img src="images/StyleGuide-iphone.png" alt="">
+        <div class="articles padding">
+            <article>
+                <img src="images/coathanger.svg" alt="icon">
+                <h4>Discover your signature look</h4>
+                <p>Take our interactive style guide quiz and unlock a personalized fashion roadmap.</p>
+            </article>
+            <article>
+                <img src="images/home.svg" alt="icon">
+                <h4>Discover your signature look</h4>
+                <p>Take our interactive style guide quiz and unlock a personalized fashion roadmap.</p>
+            </article>
+            <article >
+                <img src="images/pinterest.svg" alt="icon">
+                <h4>Connect your Pinterest board</h4>
+                <p> Respire analyzes your pins for deeper style insights and recommendations.</p>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <div class="footerup innerpadding">
+            <a class="logo" href="#"><img src="images/logo.svg" alt="logo"></a>
+        
+            <a class="footerbtn" href="#">Download</a>
+        </div>
+        <hr>
+        <p class="innerpadding">© 2024 . All rights reserved. Ilian Bosserez</p>
+
+    </footer>
+</body>
+
+
+</html>
+<script>
+    function myFunction() {
+      let burgernav = document.getElementById("myLinks");
+    
+      if (burgernav.style.display === "block" || burgernav.style.display === "flex") {
+        burgernav.style.display = "none";
+      } else {
+        burgernav.style.display = "flex";
+      }
+    }
+    </script>
