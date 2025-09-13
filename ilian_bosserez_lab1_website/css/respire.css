@@ -238,62 +238,101 @@ h4 {
     text-align: center;
 }
 
-.styleguide img {
-    width: 60%;
-    max-width: 100%;
-}
-
 .styleguide {
+    background: transparent; /* use page background like the Figma frame */
+    border-radius: 0 !important;
+    margin: 0;               /* spacing managed by .padding classes */
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden
+    ;
+}
+
+
+
+.styleguide-flex {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-article {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
-}
-
-.articles article p {
-    margin: 0%;
-}
-
-.articles article img {
-    width: 15%;
-}
-
-footer {
-    padding: 5% 5%;
-    color: #727C61;
-}
-
-.footerup {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 5%;    
+  
 }
 
-.footerbtn {
-    text-decoration: none;
-    border: #727C61;
+.styleguide-text {
+    flex: 1 1 38%;
+    max-width: 520px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.styleguide-text h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
     color: #727C61;
-    font-weight: 500;
-    padding: 0.4em 0.7em;
-    border-style: solid;
-    border-radius: 1.2em;
 }
 
-.footerbtn:hover {
-    background-color: #727C61;
-    color: #FCF9F2;
+.styleguide-text p {
+    font-size: 1.3em;
+    color: #26211D;
+    margin-bottom: 0;
 }
 
-.logo img {
-    width: 5em;
+
+
+/* BIG phone that overflows right — tweak % to taste */
+.styleguide-image img {
+    max-width: none;
+    min-width: 380px;
+    margin-right: -12%;        /* pushes the image off the right edge */
+    display: block;
+    border-radius: 0;         /* avoid extra clipping of the device image */
+}
+
+/* Features Row */
+.styleguide-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vw;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.feature {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.feature img {
+  width: 48px;
+  margin-bottom: 1em;
+}
+
+.feature h4 {
+  font-size: 1em;
+  color: #727C61;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #26211D;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .styleguide-flex { flex-direction: column; gap: 2rem; align-items: stretch; }
+  .styleguide-image img { width: 100%; margin-right: 0; transform: none; min-width: 0; }
+  footer { flex-direction: column; align-items: flex-start; gap: 1rem; }
 }
 
 @media(min-width:750px) {
@@ -549,3 +588,41 @@ footer {
 
     }
 }
+
+footer {
+    color: #727C61;
+    padding: 0 5%;
+}
+
+.footerup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerbtn {
+    text-decoration: none;
+    border: #727C61;
+    color: #727C61;
+    font-weight: 500;
+    padding: 0.4em 0.7em;
+    border-style: solid;
+    border-radius: 1.2em;
+}
+
+.footerbtn:hover {
+    background-color: #727C61;
+    color: #FCF9F2;
+}
+
+/* logo size used in your original footer */
+.logo img {
+    width: 5em;
+}
+
+/* restore original innerpadding behavior */
+.innerpadding {
+    padding-bottom: 5%;
+}
+
+/* (keep any responsive footer rules already present later in the stylesheet) */
